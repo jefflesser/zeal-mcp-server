@@ -1,15 +1,12 @@
 {
   "version": 2,
+  "env": {
+    "NODE_ENV": "production"
+  },
   "builds": [
     {
-      "src": "api/**/*.js",
+      "src": "api/mcp.js",
       "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
     }
   ]
 }
