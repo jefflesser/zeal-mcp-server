@@ -3,10 +3,10 @@
   "env": {
     "NODE_ENV": "production"
   },
-  "builds": [
-    {
-      "src": "api/mcp.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/mcp.js": {
+      "memory": 1024,
+      "maxDuration": 10
     }
-  ]
+  }
 }
