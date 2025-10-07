@@ -1,3 +1,15 @@
 {
-  "functions": { "api/*.ts": { "runtime": "edge" } }
+  "version": 1,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ]
 }
