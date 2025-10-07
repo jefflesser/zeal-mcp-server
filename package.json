@@ -8,13 +8,13 @@
     "list-tools": "node index.js tools"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.17.0",
+    "@modelcontextprotocol/sdk": "latest",
     "commander": "^13.1.0",
     "dotenv": "^16.4.7",
     "express": "^5.1.0"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "author": "Postman, Inc.",
   "license": "MIT"
