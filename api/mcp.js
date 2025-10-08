@@ -76,6 +76,19 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Get API key from query parameter or fallback to environment variable
+    const apiKey = req.query.api_key || process.env.ZEAL_API_KEY;
+    
+    if (!apiKey) {
+      return res.status(401).json({ 
+        error: 'API key required',
+        message: 'Please provide your Zeal API key as a query parameter: ?api_key=YOUR_KEY'
+      });
+    }
+
+    // Set the API key in the environment for tools to use
+    process.env.ZEAL_API_KEY = apiKey;
+
     const tools = await discoverTools();
     
     const server = new Server(
