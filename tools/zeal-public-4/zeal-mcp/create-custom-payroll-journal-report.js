@@ -11,7 +11,7 @@
  */
 const executeFunction = async ({ start_date, end_date, companyID, media_type = 'pdf', fields }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   const body = {
     start_date,

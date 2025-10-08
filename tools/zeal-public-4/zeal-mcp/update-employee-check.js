@@ -14,7 +14,7 @@
  */
 const executeFunction = async ({ companyID, employeeCheckID, reportingPeriodID, check_date = "1954-11-26", approval_required = true, approved = true, metadata = {}, disbursement = { method: "direct_deposit" } }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the URL for the PATCH request
     const url = `${apiUrl}/employeeCheck`;

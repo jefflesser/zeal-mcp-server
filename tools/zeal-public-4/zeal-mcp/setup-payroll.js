@@ -10,7 +10,7 @@
  */
 const executeFunction = async ({ companyID, firstCheckDate, paySchedule, reportingPeriodID }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   // Construct the request body
   const body = JSON.stringify({

@@ -18,7 +18,7 @@
  */
 const executeFunction = async ({ companyID, deduction_type = "401k", custom_name = "Zeal Testing 401k", employee_contribution, employer_contribution }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the request body
     const body = JSON.stringify({

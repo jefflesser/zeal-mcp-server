@@ -17,7 +17,7 @@
  */
 const executeFunction = async ({ companyID, contractorPaymentID, contractorID, approval_required = true, approved = false, pay_date, amount, disbursement, type, metadata = {}, customerAccountID }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   const payload = {
     companyID,

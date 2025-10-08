@@ -16,7 +16,7 @@
  */
 const executeFunction = async ({ companyID, employeeCheckID, deductionID, deduction }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the URL for the PATCH request
     const url = `${apiUrl}/deductions`;

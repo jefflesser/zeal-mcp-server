@@ -10,7 +10,7 @@
  */
 const executeFunction = async ({ companyID, worker_type = 'employee', media_type = 'csv', active_workers = true }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   try {
     const url = `${apiUrl}/reports/worker-summary`;

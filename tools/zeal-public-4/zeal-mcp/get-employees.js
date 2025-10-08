@@ -19,7 +19,7 @@
  */
 const executeFunction = async ({ companyID, onboarded, employment_status, title, dob, start_date, email, phone_number, default_pay_schedule, is_943, is_scheduleH, external_id, workLocationID }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the URL with query parameters
     const url = new URL(`${apiUrl}/employees`);

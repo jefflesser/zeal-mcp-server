@@ -10,7 +10,7 @@
  */
 const executeFunction = async ({ employeeID, companyID, jurisdictions = ["CA", "US"], effectiveDate = "1948-04-04" }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   try {
     const url = `${apiUrl}/employees/getTaxParameterSummary`;

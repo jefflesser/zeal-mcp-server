@@ -16,7 +16,7 @@
  */
 const executeFunction = async ({ templateID, form_name, description, paperwork_type = 'W4', worker_type = 'Employee', jurisdictions_filter = '{"type":"all","jurisdictions":["string","string"]}', jurisdiction_type = 'WorkLocation', effective_date, archive_date, status = 'Live' }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the URL with the template ID
     const url = `${apiUrl}/paperwork/templates/${templateID}`;

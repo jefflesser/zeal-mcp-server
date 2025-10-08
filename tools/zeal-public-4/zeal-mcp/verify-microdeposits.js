@@ -9,7 +9,7 @@
  */
 const executeFunction = async ({ companyID, customerAccountID, deposits }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the URL with the customer account ID
     const url = `${apiUrl}/customer-accounts/${customerAccountID}/verify-micro-deposits`;

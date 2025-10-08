@@ -37,7 +37,7 @@ const executeFunction = async ({
   policy_status = "live"
 }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   const body = {
     companyID,

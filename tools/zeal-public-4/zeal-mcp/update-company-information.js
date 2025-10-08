@@ -29,7 +29,7 @@ const executeFunction = async ({
   business_phone
 }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   const requestBody = {
     companyID,

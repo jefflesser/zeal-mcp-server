@@ -12,7 +12,7 @@
  */
 const executeFunction = async ({ bankAccountID, companyID, account_number, type, routing_number, institution_name }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   const requestBody = {
     bankAccountID,

@@ -10,7 +10,7 @@
  */
 const executeFunction = async ({ pay_start_date, pay_end_date, companyID, media_type = 'pdf' }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the URL for the request
     const url = `${apiUrl}/reports/payment-summary`;

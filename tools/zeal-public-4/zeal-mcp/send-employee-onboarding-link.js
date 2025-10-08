@@ -14,7 +14,7 @@
  */
 const executeFunction = async ({ companyID, employees }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   try {
     // Construct the request body

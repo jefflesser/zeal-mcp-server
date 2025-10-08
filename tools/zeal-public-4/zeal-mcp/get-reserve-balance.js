@@ -10,7 +10,7 @@
  */
 const executeFunction = async ({ companyID, account_type, start_at, limit = 25 }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   try {
     // Construct the URL with query parameters

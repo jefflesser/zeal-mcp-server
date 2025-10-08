@@ -13,7 +13,7 @@
  */
 const executeFunction = async ({ companyID, employeeID, profile = false, employee_acct = false, i9_form = false, id_scan = false, payment_method = true }) => {
   const apiUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
 
   try {
     // Construct the request body

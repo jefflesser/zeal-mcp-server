@@ -10,7 +10,7 @@
  */
 const executeFunction = async ({ employeeID, companyID, id_type, id_base64 }) => {
   const baseUrl = 'https://api.zeal.com';
-  const token = process.env.ZEAL_PUBLIC_API_API_KEY;
+  const token = process.env.ZEAL_API_KEY;
   try {
     // Construct the URL for the POST request
     const url = `${baseUrl}/employees/id`;
